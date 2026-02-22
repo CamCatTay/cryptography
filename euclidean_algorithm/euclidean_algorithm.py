@@ -21,6 +21,7 @@ def extended_euclidean(a, b):
         s = 0
         return orig_a, orig_b, d, s, t
 
+    # swap if a < b because its easier to calculate when a > b
     swapped = False
     if abs(a) < abs(b):
         a, b = b, a
